@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>NEON BREAKER: HORROR</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='10' y='10' width='80' height='20' rx='4' fill='%23ff4466'/%3E%3Ccircle cx='50' cy='55' r='12' fill='%23ffffff'/%3E%3Crect x='20' y='80' width='60' height='10' rx='5' fill='%23ff4466'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="hud">
+      <div class="hud-item">
+        <span class="hud-label">SCORE</span>
+        <span class="hud-value" id="score">0</span>
+      </div>
+      <div class="hud-item">
+        <span class="hud-label">VIES</span>
+        <span class="hud-value" id="lives">3</span>
+      </div>
+      <div class="hud-item">
+        <span class="hud-label">NIVEAU</span>
+        <span class="hud-value" id="level">1</span>
+      </div>
+      <div class="hud-item">
+        <span class="hud-label">RECORD</span>
+        <span class="hud-value" id="highScore">0</span>
+      </div>
+    </div>
+
+    <div id="bossHud" class="boss-hud hidden">
+      <span class="boss-name" id="bossName"></span>
+      <div class="boss-hp-bar">
+        <div class="boss-hp-fill" id="bossHpFill"></div>
+      </div>
+    </div>
+
+    <button id="muteBtn" class="mute-btn" aria-label="Activer ou couper le son"></button>
+
+    <div id="overlay" class="overlay"></div>
+
+    <div id="screamerOverlay" class="screamer-overlay"></div>
+  </div>
+
+  <script src="game.js"></script>
+  <script src="game-impossible.js"></script>
+  <script src="game-abomination.js"></script>
+  <script src="game-ultimate.js"></script>
+  <script src="minigames.js"></script>
+</body>
+</html>
