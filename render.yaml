@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: neon-breaker-horror
+    env: static
+    buildCommand: ""
+    staticPublishPath: .
